@@ -21,6 +21,45 @@
     margin-left: 1rem;
     margin-right: 1rem;
 }
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.nav li a {
+    margin: 10px 15px 0;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 8px;
+    line-height: 30px;
+    opacity: .7;
+}
+
+p {
+    color: #66615b;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.nav p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
 /* ---------------------Side Bar end--------------------- */
 
 /* ---------------------NavBar start--------------------- */

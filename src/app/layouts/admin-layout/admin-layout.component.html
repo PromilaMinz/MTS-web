@@ -3,6 +3,20 @@
       <!-- <sidebar-cmp></sidebar-cmp> -->
       <div class="sidebar">
         <div class="brand-logo"><h1>MTS</h1><hr class="logo-hr"/></div>
+        <fa name="F-A Icons" size="lg"></fa>
+        <ul class="nav">
+          <li class="col-12">
+            <a routerLink="/admin/dashboard">
+              
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="col-12">
+            <a routerLink="/admin/orders">
+              <p>Ordres</p>
+            </a>
+          </li>
+        </ul>
       </div>
   </div>
   <div class="main-panel">
@@ -33,15 +47,7 @@
       </nav>
 
       <div class="content">
-          <!-- <router-outlet></router-outlet> -->
-          <h2>Orders</h2>
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-          <alert type="success">
-            <strong>Hello</strong> You successfully read this important alert message.
-          </alert>
-
-          <button type="button" class="btn btn-primary" >Create template modal</button>
+          <router-outlet></router-outlet>
       </div>
       <!-- <footer-cmp></footer-cmp> -->
   </div>
