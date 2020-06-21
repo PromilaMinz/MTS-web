@@ -2,8 +2,8 @@
     top: 0;
     right: 0;
     z-index: 1030;
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: calc(100% - 260px);
     /* position: fixed; */
     /* width: inherit; */
     border-bottom: 1px solid #ddd;
@@ -21,5 +21,9 @@
     padding-bottom: .5rem;
     line-height: 1.625rem;
     font-family: Montserrat,"Helvetica Neue",Arial,sans-serif;
+    color: #66615b;
+}
+
+fa {
     color: #66615b;
 }
