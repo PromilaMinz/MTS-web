@@ -8,8 +8,8 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
-  { path: '/admin/dashboard',     title: 'Dashboard',         icon:'nc-bank',       class: 'col-12' },
-  { path: '/admin/orders',     title: 'Orders',         icon:'nc-bank',       class: 'col-12' },
+  { path: '/admin/dashboard', title: 'Dashboard', icon:'home',  class: 'col-12' },
+  { path: '/admin/orders', title: 'Orders', icon:'file-o', class: 'col-12' },
 ];
 
 @Component({

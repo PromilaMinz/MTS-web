@@ -34,7 +34,7 @@ li {
 }
 .nav li a {
     margin: 10px 15px 0;
-    color: #fff;
+    /* color: #fff; */
     display: block;
     text-decoration: none;
     position: relative;
