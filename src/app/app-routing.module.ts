@@ -9,7 +9,7 @@ import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component
 const routes: Routes =[
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: '/',
     pathMatch: 'full',
   }, {
     path: 'admin',
@@ -22,7 +22,7 @@ const routes: Routes =[
     ]
   },
   {
-    path: 'home',
+    path: '',
     component: HomeLayoutComponent,
     children: [
       {
@@ -32,7 +32,7 @@ const routes: Routes =[
     ]
   }, {
     path: '**',
-    redirectTo: 'admin/dashboard'
+    redirectTo: '/'
   }
 ];
 
