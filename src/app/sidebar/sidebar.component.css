@@ -1,0 +1,61 @@
+.sidebar-cmp {
+    width: 260px;
+    border: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+.brand-logo {
+    text-align: center !important;
+    color: #66615b;
+    font-family: Montserrat,"Helvetica Neue",Arial,sans-serif;
+}
+.logo-hr {
+    margin-top: 0.55rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.nav li a {
+    margin: 10px 15px 0;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 8px;
+    line-height: 30px;
+    opacity: .7;
+}
+
+p {
+    color: #66615b;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.nav p {
+    margin-bottom: 0;
+    margin-top: 0;
+}

@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { HomeLayoutModule } from './layouts/home-layout/home-layout.module';
+import { SidebarModule } from './sidebar/sidebar.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HomeLayoutModule } from './layouts/home-layout/home-layout.module';
     FontAwesomeModule,
     AlertModule.forRoot(),
     ModalModule.forRoot(),
+    SidebarModule,
     AppRoutingModule,
     AdminLayoutModule,
     HomeLayoutModule
