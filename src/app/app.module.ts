@@ -15,6 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { HomeLayoutModule } from './layouts/home-layout/home-layout.module';
 import { SidebarModule } from './sidebar/sidebar.module';
+import { NavbarModule } from './navbar/navbar.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SidebarModule } from './sidebar/sidebar.module';
     SidebarModule,
     AppRoutingModule,
     AdminLayoutModule,
-    HomeLayoutModule
+    HomeLayoutModule,
+    NavbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

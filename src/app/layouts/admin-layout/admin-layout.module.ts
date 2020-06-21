@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { AdminLayoutComponent } from './admin-layout.component';
 import { AdminLayoutRoutes } from './admin-layout.routing';
 import { SidebarModule } from 'src/app/sidebar/sidebar.module';
+import { NavbarModule } from 'src/app/navbar/navbar.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SidebarModule } from 'src/app/sidebar/sidebar.module';
   imports: [
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
-    SidebarModule
+    SidebarModule,
+    NavbarModule
   ]
 })
 export class AdminLayoutModule { }

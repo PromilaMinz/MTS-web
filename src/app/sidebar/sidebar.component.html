@@ -1,7 +1,9 @@
   <div class="sidebar-cmp" data-color="white" data-active-color="danger">
-      <!-- <sidebar-cmp></sidebar-cmp> -->
       <div class="sidebar">
-        <div class="brand-logo"><h1>MTS</h1><hr class="logo-hr"/></div>
+        <div class="brand-logo">
+          <a [routerLink]="['/home']"><h1>MTS</h1></a>
+          <hr class="logo-hr"/>
+          </div>
         <fa name="F-A Icons" size="lg"></fa>
         <ul class="nav">
             <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">

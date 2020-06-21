@@ -6,12 +6,6 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 
 
-// const routes: Routes = [
-//   { path: 'orders', component: OrdersComponent },
-//   { path: 'dashboard', component: DashboardComponent },
-//   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-// ];
-
 const routes: Routes =[
   {
     path: '',
@@ -28,7 +22,7 @@ const routes: Routes =[
     ]
   },
   {
-    path: '',
+    path: 'home',
     component: HomeLayoutComponent,
     children: [
       {
