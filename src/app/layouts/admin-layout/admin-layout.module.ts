@@ -4,9 +4,8 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AdminLayoutComponent } from './admin-layout.component';
 import { AdminLayoutRoutes } from './admin-layout.routing';
-import { FontAwesomeModule } from 'ngx-icons';
-
-
+import { SidebarModule } from 'src/app/sidebar/sidebar.module';
+import { NavbarModule } from 'src/app/navbar/navbar.module';
 
 
 @NgModule({
@@ -15,9 +14,9 @@ import { FontAwesomeModule } from 'ngx-icons';
   ],
   imports: [
     CommonModule,
-    FontAwesomeModule,
     RouterModule.forChild(AdminLayoutRoutes),
-
+    SidebarModule,
+    NavbarModule
   ]
 })
 export class AdminLayoutModule { }
