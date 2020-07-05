@@ -1,0 +1,16 @@
+  <div class="sidebar-cmp" data-color="white" data-active-color="danger">
+      <div class="sidebar">
+        <div class="brand-logo">
+          <h1><a [routerLink]="['']">MTS</a></h1>
+          <hr class="logo-hr"/>
+          </div>
+        <ul class="nav">
+            <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
+                <a [routerLink]="[menuItem.path]">
+                    
+                    <p><fa name="{{menuItem.icon}}"></fa> {{menuItem.title}}</p>
+                </a>
+            </li>
+        </ul>
+      </div>
+  </div>
