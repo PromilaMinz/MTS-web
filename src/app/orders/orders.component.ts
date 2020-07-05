@@ -1,22 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { stringify } from 'querystring';
 import { Order } from '../orders';
-
+import { OrderService} from '../order.service';
 @Component({
   selector: 'app-orders',
   templateUrl: './orders.component.html',
   styleUrls: ['./orders.component.css']
 })
 export class OrdersComponent implements OnInit {
-  order: Order = {
-    orderId: 1,
-    customerName: 'Promila'
-  };
+  orders: Order[];
 
-  constructor() { 
+  getOrders(): void {
+      this.orderService.getOrders()
+          .subscribe(orders => this.orders = orders);
   }
+  constructor(private orderService: OrderService) {}
 
   ngOnInit(): void {
-  }
+      this.getOrders();
+    }
 
 }

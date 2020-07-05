@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { FontAwesomeModule } from 'ngx-icons';
@@ -17,7 +20,8 @@ import { HomeLayoutModule } from './layouts/home-layout/home-layout.module';
 import { SidebarModule } from './sidebar/sidebar.module';
 import { NavbarModule } from './navbar/navbar.module';
 
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms';
+import { OrderDetailComponent } from './order-detail/order-detail.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -25,11 +29,15 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
     OrdersComponent,
     // AdminLayoutComponent,
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+    OrderDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }),
     BrowserAnimationsModule,
     FontAwesomeModule,
     AlertModule.forRoot(),

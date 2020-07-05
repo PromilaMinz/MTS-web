@@ -1,0 +1,13 @@
+
+<div *ngIf="order">
+    <h2>{{order.customerName | uppercase}} Details</h2>
+    <div><span>id: </span>{{order.orderId}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="order.customerName" placeholder="name"/>
+      </label>
+    </div>
+</div>
+
+<button (click)="goBack()">go back</button>
+

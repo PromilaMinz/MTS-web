@@ -1,6 +1,9 @@
-<p>{{order.customerName | uppercase}} Details</p>
-<h3><span>Order Id: </span>{{order.orderId}}</h3>
-<!-- // <h3><span>Customer Name: </span>{{order.customerName}}</h3> -->
-<label> Customer Name:
-    <input [(ngModel)]="order.customerName" placeholder="name"/>
-  </label>
+
+  <h2>My Orders</h2>
+<ul class="orders">
+  <li *ngFor="let order of orders" >
+    <a routerLink="/admin/orders/{{order.orderId}}">
+      <span class="badge">{{order.orderId}}</span> {{order.customerName}}
+    </a>
+  </li>
+</ul>
