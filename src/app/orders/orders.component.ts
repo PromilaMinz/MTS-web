@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { stringify } from 'querystring';
+import { Order } from '../orders';
 
 @Component({
   selector: 'app-orders',
@@ -6,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./orders.component.css']
 })
 export class OrdersComponent implements OnInit {
+  order: Order = {
+    orderId: 1,
+    customerName: 'Promila'
+  };
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }

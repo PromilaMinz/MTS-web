@@ -8,6 +8,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { OrdersComponent } from './orders/orders.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +18,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     AlertModule.forRoot(),
     ModalModule.forRoot()
